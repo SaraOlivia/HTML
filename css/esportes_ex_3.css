@@ -1,29 +1,35 @@
 body {
     
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 18px;
-   
-    
+    font-family: cursive, sans-serif;
+    font-size: 17pt;
+    margin: auto;
+    width: fit-content;
+    margin: center;
 }
 
 h1 {
     background-color: hsl(106, 95%, 45%);
-    color: #000000;
+    color: #535353;
     text-align: center;
     padding: 20px;
     border-radius: 15px;
-    width: 70%;
+    width: 700px;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
 p {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 15px;
+    margin: 10px auto 15px ;
+    width: 700px;
+}
 
-    
+b {
+    color: red;
+}
+
+i {
+    color: rgb(167, 66, 207);
 }
 
 table {
@@ -33,8 +39,10 @@ table {
     text-align: center;
     margin: 0 30px;
     padding: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-top: 8px;
+    border-spacing: 15px;
+    width: 1224px;
     
 }
 
