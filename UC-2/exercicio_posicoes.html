@@ -7,17 +7,21 @@
 
         .box_position{
             background-color: rgb(126, 29, 206);
+            position: absolute;
             width: 250px;
             height: 250px;
-            color: white;
+            border: solid 2px red;
             text-align: center;
-            padding: 20px;
-            border: 2px solid red;
+            padding: 30px;
         }
 
         .box{
             background-color: white;
-            width: 1000px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            height: 700px;
+            position: relative;
 
         }
         
@@ -28,28 +32,30 @@
 
         h1{
             background-color: rgb(59, 104, 14);
+            width: 100%;
+        }
+
+        p{
+            padding: 10px;
+            font-family: sans-serif;
         }
 
         #UM{
-            position: relative;
-            left: 300px;
-            top: 200px;
-            
-        }
-
-        #TRES{
-            position: relative;
-            left: 300px;
-            bottom: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         #DOIS{
-            position: relative;
-            left: 1280px;
-            bottom: 100px;
-
+            position: absolute;
+            right: 0;
+            top: 0;
         }
 
+        #TRES{
+            position: absolute;
+            bottom: 0;
+        }
         
        </style>
     </head>
