@@ -89,6 +89,7 @@ body{
   height: 200px;
 }
 
+/*Vertical*/
 .align-items_base>div{
   background-color: white;
   width: 100px;
@@ -103,6 +104,86 @@ body{
   display: flex;
   height: 200px;
   align-items: baseline;
+}
+
+.align-content>div{
+  background-color: rgb(236, 208, 155);
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.align-content{
+  background-color: rgb(99, 123, 230);
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.pFlexGrow>div{
+  background-color: orange;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.pFlexGrow{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: stretch;
+}
+
+.align-self>div{
+  background-color: rgb(142, 216, 173) ;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.align-self{
+  background-color:rgb(64, 117, 46);
+  display: flex;
+  height: 200px;
+}
+
+.align-self2>div{
+  background-color: rgb(152, 150, 228) ;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.align-self2{
+  background-color:rgb(60, 36, 145);
+  display: flex;
+  height: 200px;
+}
+
+.alinhamentoPerfeito>div{
+  background-color: darkred;
+  color: white;
+  width: 300px;
+  height: 300px;
+ 
+  
+}
+
+.alinhamentoPerfeito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color:rgb(64, 117, 46);
+  
 }
 
   </style>
@@ -282,9 +363,10 @@ body{
   <p>A propriedade especifica o quanto um item flexível crescerá em relação ao resto dos itens flexíveis.</p>
   <h2>Exemplo:</h2>
   <div class="pFlexGrow">
-    <div style="flex-grow: 1">A</div>
-    <div style="flex-grow: 1">B</div>
-    <div style="flex-grow: 8">C</div>
+    <div style="flex-grow: 4">A</div>
+    <div style="flex-grow: 2">B</div>
+    <div style="flex-grow: 4">C</div>
+    <!--Importante Respeitar o espaçamento do grid do layout que vai até 12 espaços (colunas)-->
   </div>
   <hr>
   <h2>align-self</h2>
@@ -315,8 +397,9 @@ body{
   <p>Defina os dois <b>justify-content</b> e a <b>align-items</b> propriedades para <b>center</b>, e o item flex será
     perfeitamente centrado.</p>
   <h2>Exemplo:</h2>
-  <div class="alinhamentoPerfeito">
-    <div></div>
+  <div class="alinhamentoPerfeito" style="display: flex; align-items: center;">
+    <div style="text-align: center;">Alinhamento</div>
+    
   </div>
 
 </body>
