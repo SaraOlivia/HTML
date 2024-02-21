@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        
+    <head>
+        <meta charset="UTF-8">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@media</title>
+
+        <style>
+            body{
+                font-family: sans-serif;
+                background-color: rgb(218, 182, 236);
+            }
+            .tudo{
+                /*Ele trás o conteúdo para dentro do container*/
+                overflow: auto;
+            }
+            #texto{
+                margin-left: 4px;
+            }
+            #list{
+                /*Flutuar meus Objetos para varias posições*/
+                float: none;
+                /*Deixar responsivo, se mover de acordo*/
+                width: auto;
+            }
+            #menulist{
+                margin: 0;
+                padding: 0;
+            }
+            .menuitem{
+                background-color:  #b8e6e9;
+                border: solid 1px rgb(155, 87, 243);
+                border-radius: 4px;
+                list-style-type: none;
+                margin: 4px;
+                padding: 2px;
+                text-align: center;
+            }
+
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(37, 37, 37);
+            }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+            }
+
+            .topnav a:hover {
+                background-color: rgb(124, 122, 122);
+            }
+
+            /*Screen: mobile, desktop e etc (diferentes interações de medidas para cada dispositivo)*/
+            /*Estrutura mediaquery, sintaxe*/
+            /*Se for maior que 480... tenha esse coportamento:
+            Ao usar max-widht a estrategia é ao contrário, ou seja de 480 para baixo.*/
+            @media screen and (min-width:480px) {
+                body{
+                    background-color: rgb(208, 208, 253);
+                }
+
+                #list{
+                    float: left;
+                    width: 200px;
+                }
+
+                #texto{
+                    margin-left: 216px;
+                }
+               
+            }
+
+            @media screen and (max-width:600px) {
+                .topnav a{
+                    float: none;
+                    width: 100%;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body>
+
+        <h1>@media</h1>
+
+        <p>Regra, introduzida em CSS2, possibilitou definir regras de estilo diferentes para diferentes tipos e mídia.</p>
+
+        <p>As consultas de mídia podem ser usadas para verificar muitas coisas, como:</p>
+
+        <ul>
+            <li>Largura e altura da viewport</li>
+            <li>Orientação da viewport (paisagem ou retrato)</li>
+            <li>Resolução</li>
+        </ul>
+
+        <p>Usando consultas de mídia são uma técinica popular para oferecer um estilo personalizado Folha pata desktops, laptops, tablets e smartphones.</p>
+
+        <p>Exemplos:</p>
+
+    <div class="tudo">
+        <div id="list">
+            <ul id="menulist">
+                <li class="menuitem">Conteúdo 1</li>
+                <li class="menuitem">Conteúdo 2</li>
+                <li class="menuitem">Conteúdo 3</li>
+                <li class="menuitem">Conteúdo 4</li>
+                <li class="menuitem">Conteúdo 5</li>
+            </ul>
+        </div>
+
+        <div id="texto">
+            <h1>Conteúdo de quebra</h1>
+    
+            <p>Quando determinamos as medias em pixel das orientações de páginas , estamos falando dos chamados "breakpoints"</p>
+        </div>
+    </div>
+
+            <p>MENU</p>
+        <div class="topnav">
+            <a href="#">HOME</a> 
+            <a href="#">MENU</a> 
+            <a href="#">CONTATO</a>
+        </div>
+
+    </body>
+</html>
